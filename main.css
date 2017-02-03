@@ -1,0 +1,277 @@
+body{
+    background-color: #d7d5d5;
+    min-width:700px;
+    max-width: 1080px;
+    margin:auto;
+}
+
+.bl-product{
+    border-radius: 5px;
+    line-height: 100%;
+    background: white;
+}
+
+.button{
+    height: 30px;
+    width: 100%;
+}
+
+.name-prod{
+    margin-left: 2.5%;
+    height: 27px;
+    width:70%;
+    background: white;
+    border: 2px solid #d7d7d7;
+    color: black;
+    font:14px "Times New Roman";
+    border-radius: 3px;
+}
+
+.button-add-prod{
+    height: 30px;
+    width: 24%;
+    background: #2185D0;
+    color:white ;
+    /*font-weight:bold;*/
+    border-radius: 5px 5px 5px;
+    padding-top: -2px;
+    margin: 0 0 0 -0.95%;
+    border: none;
+    min-height:100%;
+    font:14px "Times New Roman", cursive bold;
+}
+
+.hr{
+    border: none;
+    background-color: #cdcbcb;
+    color: #cdcbcb;
+    height: 2px;
+}
+
+.bl-background {
+    padding: 50px;
+    min-width: 680px;
+    max-width: 1080px;
+}
+
+.product{
+    margin: 10px 5px;
+    height: 50%;
+    display: flex;
+}
+
+.bl-list {
+    border-radius: 5px;
+    box-shadow: 5px 5px 5px grey;
+    background: white;
+    margin: 50px 25px;
+    width: 60%;
+    height: auto;
+    min-width:100px;
+}
+
+.bl-bought {
+    border-radius: 5px;
+    box-shadow: 5px 5px 5px grey;
+    height:230px;
+    width: 30%;
+    background:	white;
+    float:	right;
+    min-width:150px;
+    margin: 50px 25px;
+}
+
+@media(max-width: 680px){
+    .bl-bought{
+        width: 90%;
+        margin: 0;
+        float: left;
+        margin-top: 20px;
+        margin-left: 10px;
+        display: block;
+    }
+
+    .bl-list{
+        width: 90%;
+        margin: 0;
+        float: left;
+        margin-top: 20px;
+        margin-left: 10px;
+    }
+
+    .bl-background{
+        padding: 0;
+        min-width: 100px;
+    }
+}
+
+.list-item{
+    margin-top:5px;
+    display: inline-block;
+    background: #cdcbcb;
+    border-radius: 4px;
+    margin-left: 5px;
+    margin-bottom: 5px;
+    height: 23px;
+    padding:6px 4px 1px 4px;
+}
+
+.bl-lists{
+    font:14px "Times New Roman";
+    color:#000000;
+}
+
+.bl-lists1{
+    padding:2px 6px;
+    border-radius: 10px;
+    font:11px "Times New Roman";
+    color:#000000;
+    background: orange;
+}
+
+.bl-title{
+    font-family: "Georgia";
+    font-weight:bold;
+    width: 100px;
+    height: 38px;
+    margin-top: 20px;
+    margin-left:20px;
+    left: 40%;
+}
+
+.bl-count{
+    width: 40%;
+    margin: 10px 26.5px;
+}
+
+.name{
+    width: 30%;
+    margin: 12px 7.5px;
+}
+
+.bl-button{
+    width: 30%;
+    margin: 3px 7.5px;
+}
+
+/*Кнопки*/
+
+.bl-label {
+    text-align:center;
+    padding:2px 6px;
+    border-radius: 4px;
+    font:16px "Times New Roman";
+    color:#000000;
+    background: #cdcbcb;
+}
+
+.bl-plus {
+    padding:2px 6px;
+    border-radius: 50px;
+    font:15px "Times New Roman";
+    font-weight:bold;
+    color: #FFFFFF;
+    background-color:#3bc740;
+    border: none;
+}
+
+.bl-minus{
+    border: none;
+    padding:2px 6px;
+    border-radius: 50px;
+    font:15px "Times New Roman";
+    font-weight:bold;
+    color:#ffffff;
+    background-color: #ff5a5a;
+}
+
+.bl-buttons{
+    border: none;
+    margin-top:4px;
+    padding:2px 6px;
+    border-radius: 5px;
+    font:15px "Times New Roman";
+    color: #000000;
+    background-color: #cdcbcb;
+    height: 25px;
+}
+
+.bl-buttons1{
+    border-radius: 5px;
+    font:13px "Times New Roman";
+    font-weight:bold;
+    color:#ffffff;
+    background-color:#ff0000;
+    border: none;
+}
+
+.whynot{
+    display: flex;
+    width:70%;
+}
+
+/*Buy List*/
+
+.badge{
+    position:fixed;
+    bottom:	-100px;
+    left:	50px;
+    height:	160px;
+    background-color: darkviolet;
+    width:	200px;
+    color:white;
+    text-align: center;
+    padding-top: 20px;
+    padding-bottom:0px;
+    border-radius: 25px;
+    font:28px "Helvetica Neue Light";
+    transition: all 4s ease;
+}
+.badge:hover {
+    height: 300px;
+    background-color: blue;
+
+}
+@media print  {
+    .buy{
+        display:none;
+    }
+    .badge {
+        text-align: center;
+        border:3px solid darkviolet;
+        font-family: Times, 'Times New Roman', serif;
+        background-color: black;
+        height:260px;
+        left:50px;
+        border-radius:25px 25px 0 0;
+    }
+
+}
+
+button{
+    display: inline-block;
+    position: relative;
+}
+
+
+button .tooltiptext {
+    top:-32px;
+    left:53px;
+    visibility: hidden;
+    width: 70px;
+    background-color: darkviolet;
+    color: white;
+    /*text-align: center;*/
+    padding: 2px 0;
+    border-radius: 5px;
+    position: absolute;
+    height:21px;
+    line-height:21px;
+}
+
+button:hover .tooltiptext {
+    visibility: visible;
+    bottom:30px;
+    margin-left:-76px;
+}
+
