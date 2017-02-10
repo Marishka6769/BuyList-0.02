@@ -254,9 +254,10 @@ button{
 }
 
 
-button .tooltiptext {
+button .tooltiptext{
     top:-32px;
-    left:53px;
+    left:0;
+    right: 0;
     visibility: hidden;
     width: 70px;
     background-color: darkviolet;
@@ -267,12 +268,26 @@ button .tooltiptext {
     position: absolute;
     height:21px;
     line-height:21px;
+    transition: all 0.5s ease;
+    margin:auto;
+
 }
 
 button:hover .tooltiptext {
     visibility: visible;
     bottom:30px;
-    margin-left:-76px;
     transform: translate3d(0,-1px,0);
-    transition: all .15s ease-in-out ;
+}
+
+.harvesting{
+    display: none;
+}
+.harvesting1{
+    display: none;
+}
+.edit-item{
+    display:none;
+}
+.edit-node .edit-item{
+    display: block;
 }
