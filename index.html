@@ -16,9 +16,10 @@
 <div class="harvesting1">
     <div class="hr"> </div>
     <div class="product">
-        <div class="name">
+        <div class="name production">
             Помідори
         </div>
+        <input class="name redaction" type="text" style="display: none" placeholder="Помідори">
         <div class="bl-count">
             <button class="bl-minus">−
                 <span class="tooltiptext">-</span></button>
@@ -27,25 +28,34 @@
                 <span class="tooltiptext">+</span></button>
         </div>
         <div class="bl-button">
-            <button class="bl-buttons">Куплено
+            <button class="bl-buttons no_buy">Куплено
                 <span class="tooltiptext">Куплено</span></button>
             <button class="bl-buttons1">&#10007;
                 <span class="tooltiptext">Видалити</span>
             </button>
         </div>
+
+        <div class="bl-button buy" style="display: none">
+            <button class="bl-buttons buy">Не куплено
+                <span class="tooltiptext">Не куплено</span></button>
+        </div>
+
     </div></div>
 <div class="bl-background">
     <div class="bl-bought">
         <div class="bl-title">Залишилося</div>
         <div class="hr"> </div>
-        <div class="Whynot">
+        <div class="Whynot no_buy">
 
 
         </div>
+
         <div class="hr"> </div>
         <div class="bl-title">Куплено</div>
         <div class="hr"> </div>
+        <div class="Whynot buy"></div>
     </div>
+
 
     <div class="bl-list">
         <div class="bl-row">

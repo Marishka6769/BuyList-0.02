@@ -291,3 +291,6 @@ button:hover .tooltiptext {
 .edit-node .edit-item{
     display: block;
 }
+.line{
+    text-decoration: line-through;
+}
